@@ -1,0 +1,63 @@
+<svg width="1080" height="600" viewBox="0 0 1080 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="540" y="45" text-anchor="middle" font-size="21.6" font-weight="bold">Django Learning Log - MVT Architecture</text>
+  
+  <!-- Model Box -->
+  <rect x="45" y="90" width="225" height="360" fill="#e6f2ff" stroke="#3498db" stroke-width="1.8"/>
+  <text x="157.5" y="117" text-anchor="middle" font-size="16.2" font-weight="bold">Models</text>
+  <text x="157.5" y="144" text-anchor="middle" font-size="14.4">Topic</text>
+  <text x="90" y="171" text-anchor="start" font-size="14.4">• text (CharField)</text>
+  <text x="90" y="198" text-anchor="start" font-size="14.4">• date_added</text>
+  
+  <text x="157.5" y="234" text-anchor="middle" font-size="14.4">Entry</text>
+  <text x="90" y="261" text-anchor="start" font-size="14.4">• topic (ForeignKey)</text>
+  <text x="90" y="288" text-anchor="start" font-size="14.4">• text (TextField)</text>
+  <text x="90" y="315" text-anchor="start" font-size="14.4">• date_added</text>
+  
+  <!-- View Box -->
+  <rect x="300" y="90" width="225" height="360" fill="#e6ffe6" stroke="#2ecc71" stroke-width="1.8"/>
+  <text x="412.5" y="117" text-anchor="middle" font-size="16.2" font-weight="bold">Views</text>
+  <text x="412.5" y="162" text-anchor="middle" font-size="14.4">User Registration</text>
+  <text x="412.5" y="189" text-anchor="middle" font-size="14.4">• Create User</text>
+  <text x="412.5" y="216" text-anchor="middle" font-size="14.4">• Login User</text>
+  <text x="412.5" y="243" text-anchor="middle" font-size="14.4">• Redirect to Home</text>
+  
+  <!-- Template Box -->
+  <rect x="600" y="90" width="225" height="360" fill="#fff2e6" stroke="#f39c12" stroke-width="1.8"/>
+  <text x="712.5" y="117" text-anchor="middle" font-size="16.2" font-weight="bold">Templates</text>
+  <text x="712.5" y="162" text-anchor="middle" font-size="14.4">• index.html</text>
+  <text x="712.5" y="189" text-anchor="middle" font-size="14.4">• topics.html</text>
+  <text x="712.5" y="216" text-anchor="middle" font-size="14.4">• entry_detail.html</text>
+  
+  <!-- URL Box -->
+  <rect x="870" y="90" width="108" height="360" fill="#fff2e6" stroke="#e67e22" stroke-width="1.8"/>
+  <text x="924" y="117" text-anchor="middle" font-size="16.2" font-weight="bold">URLs</text>
+  <text x="924" y="162" text-anchor="middle" font-size="14.4">• Auth URLs</text>
+  <text x="924" y="189" text-anchor="middle" font-size="14.4">• Register Page</text>
+  
+  <!-- Connecting Arrows -->
+  <!-- Models to Views -->
+  <line x1="270" y1="270" x2="300" y2="270" stroke="#3498db" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <!-- Views to Templates -->
+  <line x1="525" y1="270" x2="600" y2="270" stroke="#f39c12" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <!-- Views to URLs -->
+  <line x1="525" y1="270" x2="870" y2="270" stroke="#2ecc71" stroke-width="1.8" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
